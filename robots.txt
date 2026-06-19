@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chastheo.github.io/siteindex-leyu-com-cn/sitemap.xml
