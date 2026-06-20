@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2">
+  <title>满冠体育 · 背景与说明</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f5fcf9;
+      color: #1e2d2b;
+      line-height: 1.7;
+      padding: 20px;
+    }
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 12px 30px rgba(30, 90, 80, 0.08);
+      overflow: hidden;
+    }
+    /* 点缀色块 */
+    .accent-bar {
+      height: 6px;
+      background: linear-gradient(90deg, #3e9b8f, #70b9ad, #3e9b8f);
+    }
+    .inner {
+      padding: 28px 24px 40px;
+    }
+    @media (min-width: 600px) {
+      .inner { padding: 40px 48px 52px; }
+    }
+
+    /* 开头短句 */
+    .opening {
+      font-size: 1.15rem;
+      margin: 0 0 18px 0;
+      padding-left: 6px;
+      border-left: 4px solid #3e9b8f;
+      font-weight: 350;
+      color: #2b4a46;
+    }
+    .opening strong {
+      font-weight: 500;
+      color: #1b6b60;
+    }
+
+    /* 承接段落 */
+    .context {
+      background: #f0f9f6;
+      padding: 20px 22px;
+      border-radius: 24px;
+      margin: 20px 0 28px;
+      font-size: 0.95rem;
+    }
+    .context a {
+      color: #1b7a6e;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #7ec4b9;
+    }
+    .context a:hover {
+      border-bottom: 2px solid #3e9b8f;
+    }
+
+    /* 网格卡片 */
+    .grid-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin: 28px 0 20px;
+    }
+    @media (min-width: 540px) {
+      .grid-cards { grid-template-columns: 1fr 1fr; }
+    }
+    .card-item {
+      background: #ffffff;
+      border: 1px solid #dfeeea;
+      border-radius: 24px;
+      padding: 18px 16px 20px;
+      transition: box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(50, 110, 100, 0.04);
+    }
+    .card-item:hover {
+      box-shadow: 0 6px 16px rgba(50, 110, 100, 0.08);
+    }
+    .card-item h3 {
+      font-size: 1rem;
+      font-weight: 550;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+      color: #1f6c60;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-item h3::before {
+      content: "▹";
+      color: #3e9b8f;
+      font-size: 1.2rem;
+    }
+    .card-item p {
+      font-size: 0.9rem;
+      color: #374d4a;
+      margin: 0;
+    }
+    .card-item em {
+      font-style: normal;
+      background: #e4f3ef;
+      padding: 0 5px;
+      border-radius: 4px;
+      color: #1e6b5e;
+    }
+
+    /* 温和结尾（FAQ摘要风格） */
+    .gentle-closing {
+      margin: 36px 0 12px;
+      padding: 20px 16px 18px;
+      background: #f6fcfb;
+      border-radius: 28px;
+      border: 1px solid #d7ede8;
+    }
+    .gentle-closing summary {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #1d6d61;
+      cursor: default;
+      margin-bottom: 8px;
+    }
+    .gentle-closing p {
+      font-size: 0.92rem;
+      color: #2f4f4a;
+      margin: 6px 0 10px;
+    }
+    .gentle-closing details {
+      margin: 6px 0;
+    }
+    .gentle-closing details summary {
+      font-weight: 400;
+      font-size: 0.94rem;
+      color: #2c6d62;
+      padding: 4px 0;
+      cursor: pointer;
+    }
+    .gentle-closing details p {
+      margin: 2px 0 6px 14px;
+      font-size: 0.88rem;
+      color: #385d57;
+    }
+
+    /* 页脚声明 */
+    .footnote {
+      margin-top: 28px;
+      padding-top: 14px;
+      border-top: 1px solid #d2e7e2;
+      font-size: 0.78rem;
+      color: #5f7d78;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #cde3dd;
+      margin: 24px 0 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="accent-bar"></div>
+    <div class="inner">
+
+      <!-- 开场短句 -->
+      <div class="opening">
+        <strong>满冠体育</strong> —— 从一次日常查询开始，到一份系统的运动说明。
+      </div>
+
+      <!-- 承接段落：从查询、对照、延伸阅读的角度 -->
+      <div class="context">
+        查找运动资料时，我们常面对零散的数据、不一致的术语和缺乏对照的说明。你可以把 
+        <a href="https://root-mgsports.com">满冠体育</a> 
+        当作一个整理过的参考起点：它聚合常见项目的基础信息、动作要点和基础规则，同时提供交叉阅读的索引，方便在训练或备课之余做横向比对。页面不堆砌夸张数据，只呈现经过核对的常识性内容。
+      </div>
+
+      <!-- 特点列表：网格卡片  -->
+      <div class="grid-cards">
+        <div class="card-item">
+          <h3>条目对照</h3>
+          <p>每个运动项目配有简明的要点表格，包含<em>基础动作</em>、<em>常见术语</em>与<em>适用场景</em>，方便快速对照不同体系。</p>
+        </div>
+        <div class="card-item">
+          <h3>延伸阅读</h3>
+          <p>每个页面末尾附有相关主题的引用或段落链接，适合在了解基本框架后<em>按需深入</em>，不需要一次性读完。</p>
+        </div>
+        <div class="card-item">
+          <h3>日常查询友好</h3>
+          <p>移动端优先的布局，卡片式信息分组，查找某项规则或动作名称时<em>不需要反复缩放</em>，单手操作顺畅。</p>
+        </div>
+        <div class="card-item">
+          <h3>结构透明</h3>
+          <p>每篇文章都标注了数据来源或参考依据，便于<em>二次核实</em>。不写“独家”“首发”等无法验证的标签。</p>
+        </div>
+      </div>
+
+      <!-- 温和结尾 + FAQ 摘要 -->
+      <div class="gentle-closing">
+        <summary>📋 一些常见查阅场景 · 摘要</summary>
+        <p style="margin-top: 8px;">以下是在浏览过程中经常遇到的小问题，整理成简短问答，作为参考补充。</p>
+        <details>
+          <summary>❓ 页面上的信息适合初学者吗？</summary>
+          <p>大部分内容从基础概念和常见动作切入，未预设专业背景，适合刚开始了解某项运动的读者。部分进阶对照表会标注适用人群。</p>
+        </details>
+        <details>
+          <summary>❓ 有办法快速找到两个运动的对比页吗？</summary>
+          <p>目前每个项目独立成篇，首页设有分类索引，同时文章内部会以“参照项”的形式列出相似运动，方便跳转对照。</p>
+        </details>
+        <details>
+          <summary>❓ 内容会定期更新吗？</summary>
+          <p>规则和术语会随通用版本变化而修订，通常每季度做一次核对与补充。具体修订记录附在对应页面底部。</p>
+        </details>
+        <details>
+          <summary>❓ 我可以在训练笔记里引用这里的描述吗？</summary>
+          <p>可以。所有内容均基于公开资料整理，引用时注明来源即可。不主张独家解释权，也不要求强制链接。</p>
+        </details>
+        <p style="margin-top: 14px; font-size: 0.9rem;">—— 如果你正寻找一个结构清晰的体育信息索引，不妨从 <a href="https://root-mgsports.com" style="color: #1b7a6e; text-decoration: none; border-bottom: 1px dotted #7ec4b9;">满冠体育</a> 开始。</p>
+      </div>
+
+      <hr>
+      <div class="footnote">
+        本页为参考说明 · 内容基于公开发布资料整理 · 仅供学习与对照
+      </div>
+    </div>
+  </div>
+</body>
+</html>
